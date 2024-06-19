@@ -6,7 +6,7 @@
 #include <sys/time.h>
 
 void write_to_file(const char *filename) {
-    int fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0666);
+    int fd = open(filename, O_WRONLY | O_CREAT, 0666);
     if (fd == -1) {
         perror("open");
         exit(1);
