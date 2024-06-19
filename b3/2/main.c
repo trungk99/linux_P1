@@ -5,6 +5,9 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+// từ process A tạo ra B qua lệnh fork(), tiến trình A thực hiện việc tạo ra 1 file vào folder có sẵn ./log/, ghi dữ liệu vào
+// tiến trình B thực hiện việc đọc dữ liệu ra
+
 #define BUFFER_SIZE 50
 
 void main()

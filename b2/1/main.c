@@ -5,7 +5,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <fcntl.h>
-
+// in ra màn hình các thông tin của file như dạng file(regular hoặc loại khác), kích thước, thời gian chỉnh sửa
 int main() {
     int fd;
     char *data = "anything data 123";

@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+// tạo ra 1 cặp process cha con thông qua system call fork()
+
 int main(int argc, char const *argv[])   /* Cấp phát stack frame cho hàm main() */
 {
     pid_t child_pid;                /* Lưu trong stack frame của main() */

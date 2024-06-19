@@ -5,6 +5,8 @@
 #include <string.h>
 #include <sys/time.h>
 
+//tạo ra 2 file A,B .txt, ghi từ 1 đến 500 vào mỗi file, sau đó in ra thời gian thực thi của tiến trình
+
 void write_to_file(const char *filename) {
     int fd = open(filename, O_WRONLY | O_CREAT, 0666);
     if (fd == -1) {
